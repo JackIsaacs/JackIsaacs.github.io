@@ -1,0 +1,80 @@
+@font-face {
+	font-family: Ikaros;
+	src: url("Data/Ikaros.otf");
+}
+
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+}
+
+.Header {
+	width: 100%;
+	height: 260px;
+	background-color: #e2fffe;
+	
+	color: #757575;
+	font-family : "Ikaros";
+	font-size: 110px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.SubHeader {
+	font-size: 20px;
+}
+
+a 
+{
+	text-decoration: none;
+	color: #757575;
+}
+
+.NavBar
+{
+	padding-top:50px;
+	font-family : "Ikaros";
+	font-size: 20px;
+	color: #757575;
+}
+
+.NavBarItem
+{
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.bodyContainer
+{
+	padding-top : 25px;
+	padding-bottom : 25px;
+	padding-left : 25px;
+	padding-right : 25px;
+	font-family : "Ikaros";
+	background-color: #f9f9f9;
+	width: 850px;
+	margin: 0 auto;
+}
+
+.PageHeader
+{
+	text-align: center;
+	font-size: 40px;
+}
+
+.footer
+{
+	font-family : "Ikaros";
+	text-align: center;
+	height: 30px;
+	margin: 0 auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+
