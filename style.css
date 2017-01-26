@@ -54,7 +54,8 @@ a
 	padding-left : 25px;
 	padding-right : 25px;
 	font-family : "Ikaros";
-	background-color: #f9f9f9;
+	background-color: #f1f1f1;
+	color: #606060;
 	width: 850px;
 	margin: 0 auto;
 }
@@ -63,6 +64,22 @@ a
 {
 	text-align: center;
 	font-size: 40px;
+	text-decoration: bold;
+}
+
+.PageSubHeader
+{
+	text-align: center;
+	font-size: 30px;
+	padding-top:20px;
+}
+
+.PageContent
+{
+	text-align: left;
+	font-size: 20px;
+	padding-left:5px;
+	background-color: #e5e5e5;
 }
 
 .footer
