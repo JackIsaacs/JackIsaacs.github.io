@@ -1,8 +1,12 @@
 <html>
 	<head>
 		<title>Jack Isaacs - Portfolio</title>
-		<link rel="shortcut icon" type="image/png" href="/favicon.png">
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
 		<link rel="Stylesheet" href="style.css">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="hovercontrol.js"></script>
+		</script>
 	</head>
 
 	<body>
@@ -10,7 +14,7 @@
 		<div class="Header">
 			Jack Isaacs 
 			<div class="SubHeader">
-				Game Developer - Graphic Designer - Student
+				Game Developer <span style="padding-left:20px;padding-right:20px">&#9679</span> Graphic Designer
 			</div>
 			
 			<div class="NavBar">
@@ -24,7 +28,7 @@
 		</div>
 		
 		<!-- PAGE INFO HERE -->
-		<div class="BodyContainer" style="height:500px;">
+		<div class="BodyContainer" style="height:auto;">
 			<div class="PageHeader">
 				Portfolio
 			</div>
@@ -34,7 +38,73 @@
 			</div>
 			
 			<!-- Games -->
+			<div class="pageContent">
 			
+				<!-- Row 1 -->
+				<div class="container">
+					<!-- Parent contains the overlay and cover image -->
+					<div class="parent">
+						<img class="cover" src="data/portfolio/muggermansion/cover.png" onmouseover="OnHover('#p1')">
+						
+						<!-- Overlay -->
+						<div id="p1" class="overlay" onmouseleave="OnLeave(this)">
+							<a class="overlaytext unselectable" href="muggermansion.html">Mugger Mansion<br><span class="overlaytextsub">C++, SDL2</span></a>
+						</div>
+						
+						<!--Must call to hide the overlay on load -->
+						<script>Hide('#p1')</script>
+					</div>
+				</div>
+				
+				<div class="container" style="margin-left:10px;">
+					<!-- Parent contains the overlay and cover image -->
+					<div class="parent">
+						<img class="cover" src="data/portfolio/ancientcrypt/cover.png" onmouseover="OnHover('#p2')">
+						
+						<!-- Overlay -->
+						<div id="p2" class="overlay" onmouseleave="OnLeave(this)">
+							<a class="overlaytext unselectable" href="ancientcrypt.html">Ancient Crypt<br><span class="overlaytextsub">C++</span></a>
+						</div>
+						
+						<!--Must call to hide the overlay on load -->
+						<script>Hide('#p2')</script>
+					</div>
+				</div>
+				
+				<div style="padding-top:10px"> <!-- Spacer --> </div>
+			
+				<!-- Row 2 -->
+				<div class="container">
+					<!-- Parent contains the overlay and cover image -->
+					<div class="parent">
+						<img class="cover" src="data/portfolio/amazingarchery/cover.png" onmouseover="OnHover('#p3')">
+						
+						<!-- Overlay -->
+						<div id="p3" class="overlay" onmouseleave="OnLeave(this)">
+							<a class="overlaytext unselectable" href="amazingarchery.html">Amazing Archery<br><span class="overlaytextsub">Unity - Android</span></a>
+						</div>
+						
+						<!--Must call to hide the overlay on load -->
+						<script>Hide('#p3')</script>
+					</div>
+				</div>
+				
+				<div class="container" style="margin-left:10px;">
+					<!-- Parent contains the overlay and cover image -->
+					<div class="parent">
+						<img class="cover" src="data/portfolio/gravity/cover.png" onmouseover="OnHover('#p4')">
+						
+						<!-- Overlay -->
+						<div id="p4" class="overlay" onmouseleave="OnLeave(this)">
+							<a class="overlaytext unselectable" href="gravity.html">Gravity<br><span class="overlaytextsub">Unity -  Android/PC<br>Agile Management</span></a>
+						</div>
+						
+						<!--Must call to hide the overlay on load -->
+						<script>Hide('#p4')</script>
+					</div>
+				</div>
+			
+			</div>
 			
 			<!-- Adobe Illustrator -->
 			
