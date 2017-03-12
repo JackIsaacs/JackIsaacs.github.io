@@ -171,4 +171,14 @@ a
 	padding: 1rem;
 }
 
+.downloadButton
+{
+	position:absolute;
+	right:10%;
+	top:290px;
+	width:150px;
+	height:76px;
+	border-radius: 15px;
+}
+
 
