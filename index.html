@@ -39,6 +39,23 @@
 			<!-- Games -->
 			<div class="pageContent">
 				<!-- Row 1 -->
+				<div class="container" style="margin-left:25%;">
+					<!-- Parent contains the overlay and cover image -->
+					<div class="parent">
+						<img class="cover" src="data/portfolio/ps4game/cover.png" onmouseover="OnHover('#p1')">
+						
+						<!-- Overlay -->
+						<div id="p1" class="overlay" onmouseleave="OnLeave(this)">
+							<a class="overlaytext unselectable" href="ps4game.html">PS4 Game (WIP)<br><span class="overlaytextsub">C++, PS4</span></a>
+						</div>
+						
+						<!--Must call to hide the overlay on load -->
+						<script>Hide('#p1')</script>
+					</div>
+				</div>
+				
+				<div style="padding-top:10px"> <!-- Spacer --> </div>
+				
 				<div class="container">
 					<!-- Parent contains the overlay and cover image -->
 					<div class="parent">
