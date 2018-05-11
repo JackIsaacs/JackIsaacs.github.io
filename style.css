@@ -1,0 +1,254 @@
+@font-face {
+	font-family: Ikaros;
+	src: url("data/Ikaros.otf");
+}
+
+
+body {
+	background-image : url("data/background.png");
+	background-repeat : repeat;
+	
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px
+}
+
+.Header {
+	width: 100%;
+	height: 260px;
+
+	background-color:rgba(0, 0, 0, 0.05);
+	color : #545950;
+	font-family : "Ikaros";
+	font-size: 110px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.SubHeader {
+	font-size: 20px;
+}
+
+a 
+{
+	text-decoration: none;
+	color : #545950;
+}
+
+.NavBar
+{
+	padding-top:50px;
+	font-family : "Ikaros";
+	font-size: 20px;
+	color : #545950;
+}
+
+.NavBarItem
+{
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	color : #545950;
+}
+
+.bodyContainer
+{
+	padding-top : 25px;
+	padding-bottom : 25px;
+	padding-left : 25px;
+	padding-right : 25px;
+	font-family : "Ikaros";
+	color: #606060;
+	width: 850px;
+	margin: 0 auto;
+}
+
+.PageHeader
+{
+	text-align: center;
+	font-size: 40px;
+	text-decoration: bold;
+	color : #545950;
+}
+
+.PageSubHeader
+{
+	text-align: center;
+	font-size: 30px;
+	padding-top:20px;
+	color : #545950;
+}
+
+.PageContent
+{
+	background-color : rgba(202, 235, 242, 0.5);
+	height:auto;
+	text-align: left;
+	font-size: 20px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	color : #545950;
+	border-radius: 30px;
+}
+
+.container
+{
+	width:395px;
+    height:395px;
+	
+	display:inline-block;
+}
+
+
+.container2
+{
+	width:100%;
+    /* height:395px; */
+	
+	display:inline-block;
+}
+
+.parent
+{
+	position:relative;
+	top:0;
+	left:0;
+}
+
+
+.cover
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 395px;
+	height: 395px;
+	border-radius: 30px;
+}
+
+.cover2
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* height: 395px; */
+	border-radius: 30px;
+}
+
+.overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:395px;
+	height:395px;
+	background-color:rgba(124, 174, 255, 0.7);
+	
+	text-align:center;
+	display:table;
+	border-radius: 30px;
+	z-index:1;
+}
+
+.overlay2
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:456px;
+	background-color:rgba(124, 174, 255, 0.7);
+	
+	text-align:center;
+	display:table;
+	border-radius: 30px;
+	z-index:1;
+}
+
+.imageflip
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:456px;
+	background-color:white;
+	color:white;
+	text-align:center;
+	display:table;
+	border-radius: 30px;
+	z-index:1;
+}
+
+.overlayText
+{
+	display: table-cell;
+	vertical-align: middle;
+	z-index:0;
+	color:white;
+	font-size : 50px;
+}
+
+.overlayTextSub
+{
+	font-size : 25px;
+	font-style:italic;
+}
+
+.unselectable
+{
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.footer
+{
+	font-family : "Ikaros";
+	text-align: center;
+	height: 30px;
+	margin: 0 auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+
+.downloadButton
+{
+	position:absolute;
+	right:10%;
+	top:290px;
+	width:150px;
+	height:76px;
+	border-radius: 15px;
+}
+
+.image
+{
+	width: 200px;
+	height: 150px;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+
+.testimonial
+{
+	right:50%;
+	left:50%;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+}
+
+
