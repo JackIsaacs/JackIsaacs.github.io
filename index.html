@@ -6,6 +6,7 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="hovercontrol.js"></script>
+		<script src="slideshow.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		</script>
 	</head>
@@ -59,6 +60,28 @@
 			
 			<!-- Games -->
 			<div class="pageContent">
+				<!--Row 0 -->
+				<div class="container2">
+					<!-- Parent contains the overlay and cover image -->
+					<div class="parent">
+
+						<img class="cover2" src="data/portfolio/radar.png" onmouseover="OnHover('#p9')" id="slideshow0">
+						<img class="cover2" src="data/portfolio/ruin.png" onmouseover="OnHover('#p9')" id="slideshow1" style="display: none">
+						<img class="cover2" src="data/portfolio/seed.png" onmouseover="OnHover('#p9')" id="slideshow2" style="display: none">
+						<div class="imageflip" id="fader" style="display: none">.</div>
+						
+						<!-- Overlay -->
+						<div id="p9" class="overlay2" onmouseleave="OnLeave(this)">
+							<a class="overlaytext unselectable" href="seed.html">Seed - Tree Creation Tool<br><span class="overlaytextsub">Final Major Project</br>C++, DirectX 11</span></a>
+						</div>
+						
+						<!--Must call to hide the overlay on load -->
+						<script>Hide('#p9')</script>
+					</div>
+				</div>
+
+				<div style="padding-top:10px"> <!-- Spacer --> </div>				
+
 				<!-- Row 1 -->
 				<div class="container">
 					<!-- Parent contains the overlay and cover image -->
