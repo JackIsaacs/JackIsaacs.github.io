@@ -2,8 +2,8 @@ var slideIndex = 0;
 
 var slides = ["slideshow0", "slideshow1", "slideshow2"];
 
-var fadetime = 200;
-var slidetime = 5000;
+var fadetime = 1000;
+var slidetime = 8000;
 
 InvokeSlideShow();
 
