@@ -1,0 +1,171 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	color: #DCD6F7;
+	background-color: #4E4C67;
+	padding: 0;
+	margin: 0;
+}
+
+a
+{
+	color:inherit;
+	text-decoration: none;
+	border-bottom: 1px solid #DCD6F7;
+	padding-bottom: 3px;
+}
+
+a:hover
+{
+	color:#A6B1E1;
+	border-bottom: 1px solid #A6B1E1;
+	padding-bottom: 3px;
+}
+
+
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+}
+
+h1
+{
+	text-align: center;
+	width:100%;
+	color: #A6B1E1;
+	height: 75px;
+	line-height: 75px;
+}
+
+
+@media only screen and (max-width: 812px)
+{
+	h1
+	{
+		text-align: center;
+		width:100%;
+		color: #A6B1E1;
+		height: 75px;
+		font-size: 25px;
+		line-height: 75px;
+	}
+}
+
+.HeaderBar
+{
+	position: fixed;
+	z-index: 99;
+	height: 500px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: #DCD6F7;
+	background-color: #985F6F;
+}
+
+@media only screen and (max-width: 812px)
+{
+	.HeaderBar
+	{
+		position: fixed;
+		z-index: 99;
+		height: 0px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		color: #DCD6F7;
+		background-color: #985F6F;
+	}
+}
+
+.HeaderJIImage
+{
+	opacity: 0.0;
+	position: fixed;	
+	padding-left: 10px;
+	padding-top: 5px;
+	height: 50px;
+}
+
+
+@media only screen and (max-width: 812px)
+{
+	.HeaderJIImage
+	{
+		opacity: 0.0;
+		width: 0;
+		height: 0;
+	}
+}
+
+
+.HeaderJIName
+{
+	font-family: 'Roboto Slab', serif;
+	opacity: 1.0f;
+	text-align: center;
+	font-size: 100px;
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 812px)
+{
+	.HeaderJIName
+	{
+		font-family: 'Roboto Slab', serif;
+		opacity: 1.0f;
+		text-align: center;
+		font-size: 50px;
+		position: relative;
+		float: left;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.HeaderNavigation
+{
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	padding-bottom: 15px;
+	padding-right: 5%;
+}
+
+@media only screen and (max-width: 812px)
+{
+	.HeaderNavigation
+	{
+		right: 0;
+		width: 100%;
+		bottom: 0;
+		position: absolute;
+		padding-bottom: 0;
+		padding-right: 0;
+	}
+}
+
+.HeaderNavigationBlock
+{
+	height:50px;
+	padding-left: 50px;
+}
+
+@media only screen and (max-width: 812px)
+{
+	.HeaderNavigationBlock
+	{
+		width: calc(100% / 3.1);
+     	height:40px;
+		padding-left: 0;
+		display: inline-block;
+		text-align: center;
+	}
+}
