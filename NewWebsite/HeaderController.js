@@ -81,4 +81,13 @@ $(document).ready(function () {
     });
 });
 
+
+$(window).on('resize', function () {
+    var win = $(this); //this = window
+    StartingSize = 0;
+    $("#JS_HEADER").css({ "height": "0px" });
+    Start();
+    StartingFontSize = 0;
+});
+
 window.addEventListener('scroll', ResizeOnScroll);
