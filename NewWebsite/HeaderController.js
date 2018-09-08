@@ -7,11 +7,13 @@ var StartingSize = 500;
 
 function Start() {
     if ($("#JS_HEADER").css("height") == "0px") {
-        $("#JS_HEADER").css({ "height": screen.height.toString() + "px" });
-        console.log($("#JS_HEADER").css("height"));
-        StartingSize = screen.height;
 
-        $("#ContentPadding").css({ "padding-top": screen.height.toString() + "px" })
+        StartingSize = window.innerHeight;
+
+        $("#JS_HEADER").css({ "height": StartingSize.toString() + "px" });
+        console.log($("#JS_HEADER").css("height"));
+
+        $("#ContentPadding").css({ "padding-top": StartingSize.toString() + "px" })
     }
 }
 
