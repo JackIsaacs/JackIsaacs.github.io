@@ -6,9 +6,11 @@ var StartingFontSize = 0;
 var StartingSize = 500;
 
 function Start() {
+    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
     if ($("#JS_HEADER").css("height") == "0px") {
 
-        StartingSize = window.outerHeight;
+        StartingSize = iOS ? screen.height : window.outerHeight;
 
         $("#JS_HEADER").css({ "height": StartingSize.toString() + "px" });
         console.log($("#JS_HEADER").css("height"));
