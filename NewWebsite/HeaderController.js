@@ -7,7 +7,6 @@ var StartingSize = 500;
 
 function Start() {
     var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-    iOS = true;
 
     if ($("#JS_HEADER").css("height") == "0px") {
 
