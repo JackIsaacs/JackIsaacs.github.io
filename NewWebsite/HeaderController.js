@@ -10,7 +10,7 @@ function Start() {
 
     if ($("#JS_HEADER").css("height") == "0px") {
 
-        StartingSize = iOS ? screen.height : window.outerHeight;
+        StartingSize = iOS ? window.height : window.outerHeight;
 
         $("#JS_HEADER").css({ "height": StartingSize.toString() + "px" });
         console.log($("#JS_HEADER").css("height"));
