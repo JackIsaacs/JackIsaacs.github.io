@@ -8,9 +8,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="HeaderController.js"></script>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!--Comment out on shipping-->
 	<!-- <meta http-equiv="refresh" content="2"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -25,24 +26,28 @@
 
 		<div class="HeaderNavigation">
 			<span class="HeaderNavigationBlock">
-				<a href="#Home">Home</a>
+				<a href="#Home" class="NavigationLink">Home</a>
 			</span>
 			<span class="HeaderNavigationBlock">
-				<a href="#About">About</a>
+				<a href="#About" class="NavigationLink">About</a>
 			</span>
 			<span class="HeaderNavigationBlock">
-				<a href="#Contact">Contact</a>
+				<a href="#Contact" class="NavigationLink">Contact</a>
 			</span>
 		</div>
 	</div>
 
 	<!-- Content -->
-	<div style="padding-top: 500px" id="ContentPadding">
+	<div style="padding-top: 500px" id="ContentPadding" class="Content">
 
 		<span class="anchor" id="Home"></span>
 		<h1>
 			Industry Work
 		</h1>
+
+		<img src="Images/SMG_Logo.png" class="SMGLogoIMG">
+
+		Junior Games Programmer - <i>July 2018 - Present</i><br>
 
 		<h1>
 			University Projects
@@ -53,86 +58,98 @@
 			About
 		</h1>
 
+		<img src="Images/avatar.png" class="Avatar" style="margin-bottom:20px;">
+
+		<p>Hello and welcome to my Portfolio! <br />My name is Jack Isaacs and I am a Game Developer from the UK.</p>
+		<p>I am currently a Junior Games Programmer at Supermassive Games in Guildford, UK.&nbsp;</p>
+		<p>I Graduated from Solent University with First Class Honours in BSc Game Development (Software Development),
+			attaining the British Computer Society Award in Business Computing, as well as the Award for Highest Overall
+			Technical
+			Achievement on my course.</p>
+
+		<h2>
+			Skillset
+		</h2>
+
+		C++<br />C#<br />Unity<br />Unreal Engine 4<br />PS4 Development<br />Web Development<br /><br />
+
+		<h2>
+			Focuses
+		</h2>
+
+		UI Programming<br />Gameplay Programming<br />Procedural Generation<br />Core-Backend
+
+		<h2>
+			Education
+		</h2>
+
+		<table cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td class="tdRight">
+						Solent University<br />2015-2018<br />Southampton
+					</td>
+					<td class="tdLeft">
+						BSc Game Development (SD)<br /><b><em>First (84%)</em></b>
+						<br /><br />
+						<em>British Computer Society Award in Business Computing<br />
+							Award for Highest Overall Technical Achievement</em>
+					</td>
+				</tr>
+				<tr>
+					<td class="tdRight">
+						Edgbarrow Sixth Form<br />2013-2015<br />Crowthorne
+					</td>
+					<td class="tdLeft">
+						ICT BTEC - <b><em>D*D*</em></b><br />
+						Graphic Design - <b><em>B</em></b><br />
+						Computing - <b><em>C</em></b><br />
+					</td>
+				</tr>
+				<tr>
+					<td class="tdRight">
+						Edgbarrow School<br />2008-2013<br />Crowthorne
+					</td>
+					<td class="tdLeft">
+						11 <em><b>A*-C</b></em> including Maths and Computing
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
 		<span class="anchor" id="Contact"></span>
 		<h1>
 			Contact
 		</h1>
 
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
-		a<br>
+		<a href="https://www.linkedin.com/in/jackisaacs97/">
+			<img src="Images/LinkedIn.png" class="ContactLogo" style="padding-right: 15px">
+		</a>
+		<a href="https://github.com/Jackisaacs">
+			<img src="Images/Git.png" class="ContactLogo" style="padding-left: 15px">
+		</a>
+
+		<br><br>
+
+		<form action="mailto:someone@example.com" method="post" enctype="text/plain" id="ContactForm">
+			Name&nbsp&nbsp&nbsp&nbsp
+			<input type="text" name="name" class="InputField"><br>
+			E-mail&nbsp&nbsp&nbsp&nbsp
+			<input type="text" name="mail" class="InputField"><br>
+
+			<center>Message</center>
+			<textarea name="comment" form="ContactForm" cols=50 rows=5></textarea><br><br>
+
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+		</form>
+		<br>
+
+		<div class="CopyrightFooter">
+			<div class="CopyRightFooterText">
+				Copyright &copy 2018 // Jack Isaacs
+			</div>
+		</div>
 	</div>
 
 	<script>Start();</script>

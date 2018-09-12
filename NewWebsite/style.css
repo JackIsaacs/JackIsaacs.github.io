@@ -3,11 +3,12 @@ body
 	font-family: 'Open Sans', sans-serif;
 	color: #DCD6F7;
 	background-color: #4E4C67;
+
 	padding: 0;
 	margin: 0;
 }
 
-a
+.NavigationLink
 {
 	color:inherit;
 	text-decoration: none;
@@ -15,7 +16,7 @@ a
 	padding-bottom: 3px;
 }
 
-a:hover
+.NavigationLink:hover
 {
 	color:#A6B1E1;
 	border-bottom: 1px solid #A6B1E1;
@@ -37,6 +38,18 @@ h1
 	color: #A6B1E1;
 	height: 75px;
 	line-height: 75px;
+}
+
+h2
+{
+	margin-top: 0px;
+	text-align: center;
+	width:100%;
+	color: #A6B1E1;
+	height: 75px;
+	line-height: 75px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 
@@ -163,9 +176,183 @@ h1
 	.HeaderNavigationBlock
 	{
 		width: calc(100% / 3.1);
-     	height:40px;
+		height:40px;
 		padding-left: 0;
 		display: inline-block;
 		text-align: center;
+	}
+}
+
+.Content
+{
+	text-align: center;
+}
+
+.SMGLogoIMG
+{
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 25px;
+}
+
+.ContactLogo
+{
+	width: 50px;
+	height: 50px;
+}
+
+@media only screen and (max-width: 812px)
+{
+	.SMGLogoIMG
+	{
+		width:70%;
+	}
+}
+
+.InputField
+{
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 812px)
+{
+	.InputField
+	{
+		width:50%;
+	}
+}
+
+textarea
+{
+	margin-top: 10px;
+	resize:none;
+}
+
+@media only screen and (max-width: 812px)
+{
+	textarea
+	{
+		width:90%;
+	}
+}
+
+.Avatar
+{
+	width: 300px;
+	height:300px;
+	
+	border-radius: 50%;
+	border: 10px solid #985F6F;
+}
+
+@media only screen and (max-width: 812px)
+{
+.Avatar
+{
+	width: 200px;
+	height: 200px;
+}
+}
+
+.CopyRightFooter
+{
+	width:100%;
+	height:50px;
+	background-color: #985F6F;
+}
+
+.CopyRightFooterText
+{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+p
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	width: 700px;
+}
+
+@media only screen and (max-width: 812px)
+{
+	p
+	{
+		width: 100%;
+	}
+}
+
+table
+{
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+	width: 600px;
+	border-collapse: collapse;
+}
+
+@media only screen and (max-width: 812px)
+{
+	table
+	{
+		margin-left:auto;
+		margin-right:auto;
+		width: 220px;
+	}
+}
+
+.tdRight
+{
+	vertical-align: text-top;
+	padding-top: 20px;
+	width: 50%; 
+	text-align: right; 
+	padding-right: 20px
+}
+
+@media only screen and (max-width: 812px)
+{
+	.tdRight
+	{
+		padding-top: 20px;
+		display: inline-block;
+		width: 100%; 
+		text-align: center; 
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+.tdLeft
+{
+	vertical-align: text-top;
+	padding-top: 20px;
+	width: 50%; 
+	text-align: left; 
+	padding-left: 20px
+}
+
+@media only screen and (max-width: 812px)
+{
+	.tdLeft
+	{
+		padding-top: 20px;
+		display: inline-block;
+		width: 100%; 
+		text-align: center; 
+		padding-right: 0px;
+		padding-left: 0px;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 812px)
+{
+	tr
+	{
+		border-bottom: 1px solid #A6B1E1;
 	}
 }

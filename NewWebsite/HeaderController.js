@@ -13,7 +13,6 @@ function Start() {
         StartingSize = iOS ? document.body.clientHeight : window.outerHeight;
 
         $("#JS_HEADER").css({ "height": StartingSize.toString() + "px" });
-        console.log($("#JS_HEADER").css("height"));
 
         $("#ContentPadding").css({ "padding-top": StartingSize.toString() + "px" })
     }
@@ -36,8 +35,6 @@ function ResizeOnScroll() {
     if (StartingSize == 0) {
         StartingSize = $("#JS_HEADER").css("height");
     }
-
-    console.log(StartingSize);
 
     const CurrentScrollY = window.pageYOffset || document.documentElement.scrollTop;
 
