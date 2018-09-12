@@ -53,7 +53,7 @@ h2
 }
 
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	h1
 	{
@@ -78,7 +78,7 @@ h2
 	background-color: #985F6F;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.HeaderBar
 	{
@@ -103,7 +103,7 @@ h2
 }
 
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.HeaderJIImage
 	{
@@ -127,7 +127,7 @@ h2
 	transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.HeaderJIName
 	{
@@ -152,7 +152,7 @@ h2
 	padding-right: 5%;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.HeaderNavigation
 	{
@@ -171,7 +171,7 @@ h2
 	padding-left: 50px;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.HeaderNavigationBlock
 	{
@@ -202,7 +202,7 @@ h2
 	height: 50px;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.SMGLogoIMG
 	{
@@ -215,7 +215,7 @@ h2
 	margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.InputField
 	{
@@ -229,7 +229,7 @@ textarea
 	resize:none;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	textarea
 	{
@@ -246,7 +246,7 @@ textarea
 	border: 10px solid #985F6F;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 .Avatar
 {
@@ -277,7 +277,7 @@ p
 	width: 700px;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	p
 	{
@@ -294,7 +294,7 @@ table
 	border-collapse: collapse;
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	table
 	{
@@ -313,7 +313,7 @@ table
 	padding-right: 20px
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.tdRight
 	{
@@ -335,7 +335,7 @@ table
 	padding-left: 20px
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	.tdLeft
 	{
@@ -349,7 +349,7 @@ table
 	}
 }
 
-@media only screen and (max-width: 812px)
+@media only screen and (max-width: 600px)
 {
 	tr
 	{

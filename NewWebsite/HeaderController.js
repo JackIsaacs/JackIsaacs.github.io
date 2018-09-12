@@ -2,7 +2,7 @@
 const MinSize = 50;
 const ScrollSpeed = 500;
 
-var StartingFontSize = 0;
+var StartingFontSize = 100;
 var StartingSize = 500;
 
 function Start() {
@@ -11,6 +11,7 @@ function Start() {
     if ($("#JS_HEADER").css("height") == "0px") {
 
         StartingSize = iOS ? document.body.clientHeight : window.outerHeight;
+        StartingFontSize = document.getElementById('#JS_HEADER_NAME').style.fontSize;
 
         $("#JS_HEADER").css({ "height": StartingSize.toString() + "px" });
 
@@ -47,11 +48,11 @@ function ResizeOnScroll() {
     var HeaderSize = GetHeaderSize();
     headerElement.style.height = HeaderSize;
 
-    nameElement.style.fontSize = StartingFontSize - (CurrentScrollY / 4.0);
+    nameElement.style.fontSize = StartingFontSize * (1 - clamp(CurrentScrollY / StartingSize, 0, 1)); 
 
     /** Set opacitys */
-    nameElement.style.opacity = 1.0 - (CurrentScrollY / 400.0);
-    iconElement.style.opacity = (CurrentScrollY / 400.0);
+    nameElement.style.opacity = (1 - clamp(CurrentScrollY / StartingSize, 0, 1)); 
+    iconElement.style.opacity = clamp(CurrentScrollY / StartingSize, 0, 1); 
 }
 
 
