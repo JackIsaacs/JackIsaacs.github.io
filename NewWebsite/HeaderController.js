@@ -11,7 +11,7 @@ function Start() {
     if ($("#JS_HEADER").css("height") == "0px") {
 
         StartingSize = iOS ? document.body.clientHeight : window.outerHeight;
-        StartingFontSize = document.getElementById('#JS_HEADER_NAME').style.fontSize;
+        StartingFontSize = $("#JS_HEADER_NAME").css("fontSize");
 
         $("#JS_HEADER").css({ "height": StartingSize.toString() + "px" });
 

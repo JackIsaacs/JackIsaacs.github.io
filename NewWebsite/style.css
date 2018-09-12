@@ -8,6 +8,11 @@ body
 	margin: 0;
 }
 
+a
+{
+	text-decoration: none;
+}
+
 .NavigationLink
 {
 	color:inherit;
@@ -26,8 +31,8 @@ body
 
 .anchor{
   display: block;
-  height: 50px; /*same height as header*/
-  margin-top: -50px; /*same height as header*/
+  height: 30px; /*same height as header*/
+  margin-top: -30px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -53,7 +58,7 @@ h2
 }
 
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	h1
 	{
@@ -78,7 +83,7 @@ h2
 	background-color: #985F6F;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.HeaderBar
 	{
@@ -103,7 +108,7 @@ h2
 }
 
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.HeaderJIImage
 	{
@@ -127,7 +132,7 @@ h2
 	transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.HeaderJIName
 	{
@@ -152,7 +157,7 @@ h2
 	padding-right: 5%;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.HeaderNavigation
 	{
@@ -171,7 +176,7 @@ h2
 	padding-left: 50px;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.HeaderNavigationBlock
 	{
@@ -202,7 +207,7 @@ h2
 	height: 50px;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.SMGLogoIMG
 	{
@@ -215,7 +220,7 @@ h2
 	margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.InputField
 	{
@@ -229,7 +234,7 @@ textarea
 	resize:none;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	textarea
 	{
@@ -246,7 +251,7 @@ textarea
 	border: 10px solid #985F6F;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 .Avatar
 {
@@ -277,7 +282,7 @@ p
 	width: 700px;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	p
 	{
@@ -290,11 +295,11 @@ table
 	border:none;
 	margin-left:auto;
 	margin-right:auto;
-	width: 600px;
+	width: 376px;
 	border-collapse: collapse;
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	table
 	{
@@ -313,7 +318,7 @@ table
 	padding-right: 20px
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.tdRight
 	{
@@ -335,7 +340,7 @@ table
 	padding-left: 20px
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	.tdLeft
 	{
@@ -349,7 +354,7 @@ table
 	}
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 376px)
 {
 	tr
 	{
