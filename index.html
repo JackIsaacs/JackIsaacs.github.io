@@ -1,236 +1,240 @@
 <html>
-	<head>
-		<title>Jack Isaacs - Portfolio</title>
-		<link rel="shortcut icon" type="image/png" href="favicon.png">
-		<link rel="Stylesheet" href="style.css">
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="hovercontrol.js"></script>
-		<script src="slideshow.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		</script>
-	</head>
 
-	<body>
-		<!-- PORTFOLIO TITLE AND NAV BAR -->
-		<div class="Header">
-			Jack Isaacs 
-			<div class="SubHeader">
-				Games Programmer
-			</div>
-			
-			<div class="NavBar">
-				<a href="index.html" class="NavBarItem">Portfolio</a>
-				&#9679
-				<a href="about.html" class="NavBarItem">About Me</a>
-				&#9679
-				<a href="contact.html" class="NavBarItem">Contact</a>
-			</div>
-			
+<head>
+	<title>Jack Isaacs // Portfolio</title>
+	<link rel="Stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="HeaderController.js"></script>
+	<script type="text/javascript" src="OverlayController.js"></script>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Comment out on shipping-->
+	<!-- <meta http-equiv="refresh" content="1"> -->
+</head>
+
+<body>
+	<!-- Header bar -->
+	<div class="HeaderBar" id="JS_HEADER">
+		<div class="HeaderJIName" id="JS_HEADER_NAME">
+			Jack Isaacs<br>
+			<span style="font-size:50%">Games Programmer</span>
 		</div>
+
+		<div class="HeaderNavigation">
+			<span class="HeaderNavigationBlock">
+				<a href="#Home" class="NavigationLink">Home</a>
+			</span>
+			<span class="HeaderNavigationBlock">
+				<a href="#About" class="NavigationLink">About</a>
+			</span>
+			<span class="HeaderNavigationBlock">
+				<a href="#Contact" class="NavigationLink">Contact</a>
+			</span>
+		</div>
+	</div>
+
+	<div class="Overlay" id="TestOverlay">
+
+		<div class="OverlayContent">
+
+			<div class="OverlayH1">
+				<span id="OverlayTitle">Title</span>
+			</div>
+
+			<iframe class="OverlayVideo" id="OverlayVideo" width="560" height="315" src="" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+
+			<br><br>
+
+			<span id="OverlayBody">Body</span>
+		</div>
+
+		<img src="Images/close.png" class="OverlayCloseButton" onclick="HideOverlay()">
+
+	</div>
+
+	<!-- Content -->
+	<div style="padding-top: 500px" id="ContentPadding" class="Content">
+
+		<span class="anchor" id="Home"></span>
+		<h1>
+			Industry Work
+		</h1>
+
+		<img src="Images/SMG_Logo.png" class="SMGLogoIMG">
+
+		Junior Games Programmer - <i>July 2018 - Present</i><br>
+
+		<h1>
+			Personal / University Projects
+		</h1>
+
+		<div class="overlay-image" onclick="ShowOverlay('dissertation')">
+			<img class="image" src="Images/seedbanner.png" />
+			<div class="hover">
+				<div class="text">
+					Seed<br>
+					<span style="font-size:50%;">Final Major Project<br>DirectX 11 / C++</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay-image" onclick="ShowOverlay('thelastsamurai')">
+			<img class="image" src="Images/samuraibanner.png" />
+			<div class="hover">
+				<div class="text">
+					The Last Samurai<br>
+					<span style="font-size:50%;">University Year 2<br>PS4 / C++</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay-image" onclick="ShowOverlay('pitfall')">
+			<img class="image" src="Images/pitfallbanner.png" />
+			<div class="hover">
+				<div class="text">
+					Pitfall<br>
+					<span style="font-size:50%;">University Year 3<br>DirectX 11 / C++</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay-image" onclick="ShowOverlay('voxzombies')">
+			<img class="image" src="Images/voxzombiesbanner.png" />
+			<div class="hover">
+				<div class="text">
+					Vox Zombies<br>
+					<span style="font-size:50%;">Personal<br>Unity / C#</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay-image" onclick="ShowOverlay('muggermansion')">
+			<img class="image" src="Images/muggermansionheader.png" />
+			<div class="hover">
+				<div class="text">
+					Mugger Mansion<br>
+					<span style="font-size:50%;">University Year 1<br>SDL2 / C++</span>
+				</div>
+			</div>
+		</div>
+
+		<span class="anchor" id="About"></span>
+		<h1>
+			About
+		</h1>
+
+		<img src="Images/Avatar.jpg" class="Avatar" style="margin-bottom:20px;">
+
+		<p>Hello and welcome to my Portfolio! <br />My name is Jack Isaacs and I am a Game Developer from the UK.</p>
+		<p>I am currently a Junior Games Programmer at Supermassive Games in Guildford, UK.&nbsp;</p>
+		<p>I graduated from Solent University with First Class Honours in BSc Game Development (Software Development),
+			attaining the British Computer Society Award in Business Computing, as well as the Award for Highest Overall
+			Technical
+			Achievement on my course.</p>
+
+		Click <a href="jackisaacs_cv.docx">here</a> to download my full CV.
+
+		<h2>
+			Skillset
+		</h2>
+
+		C++<br>
+		Unreal Engine 4<br>
+		Unity + C#<br>
+		PS4 SDK<br>
+		Xbox One XDK<br>
+		Jira<br>
+		Perfoce<br>
+
+		<h2>
+			Focuses
+		</h2>
+
+		UI Programming<br />Gameplay Programming<br />Procedural Generation<br />Core-Backend
+
+		<h2>
+			Education
+		</h2>
+
+		<table cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td class="tdRight">
+						Solent University<br />2015-2018<br />Southampton
+					</td>
+					<td class="tdLeft">
+						BSc (Hons) Game Development (SD)<br /><b><em>First-class Honours</em></b>
+						<br /><br />
+						<em>British Computer Society Award in Business Computing<br />
+							Award for Highest Overall Technical Achievement</em>
+					</td>
+				</tr>
+				<tr>
+					<td class="tdRight">
+						Edgbarrow Sixth Form<br />2013-2015<br />Crowthorne
+					</td>
+					<td class="tdLeft">
+						ICT BTEC - <b><em>D*D*</em></b><br />
+						Graphic Design - <b><em>B</em></b><br />
+						Computing - <b><em>C</em></b><br />
+					</td>
+				</tr>
+				<tr>
+					<td class="tdRight">
+						Edgbarrow School<br />2008-2013<br />Crowthorne
+					</td>
+					<td class="tdLeft">
+						11 <em><b>A*-C</b></em> including Maths and Computing
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<span class="anchor" id="Contact"></span>
+		<h1>
+			Contact
+		</h1>
+
+		<a href="https://www.linkedin.com/in/jackisaacs97/">
+			<img src="Images/LinkedIn.png" class="ContactLogo" style="padding-right: 15px">
+		</a>
+		<a href="https://github.com/Jackisaacs">
+			<img src="Images/Git.png" class="ContactLogo" style="padding-left: 15px">
+		</a>
 
 		<br><br>
 
-		<div class="testimonial">
-			First Class Honours Degree<br>
-			Solent University - Bsc (Hons) Game Development (Software Development), 2018<br><br>
+		<form action="mailto:jackisaacs97@gmail.com" method="post" enctype="text/plain" id="ContactForm">
+			Name&nbsp&nbsp&nbsp&nbsp
+			<input type="text" name="Name" class="InputField"><br>
+			E-mail&nbsp&nbsp&nbsp&nbsp
+			<input type="text" name="Email" class="InputField"><br>
 
-			Award for Highest Overall Technical Achievement<br>
-			Best Final Year Computer Games Student on the BSc (Hons) Computer Games (Software Development) Course<br>
-			British Computer Society Award in Business Computing<br>
-		</div>
+			<center>Message</center>
+			<textarea name="Message" form="ContactForm" cols=50 rows=5></textarea><br><br>
 
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+		</form>
 		<br>
-		<hr style="width:570px">
-		<br>
 
-		<div class="testimonial">
-			"Jack is a skilled and responsible young man 
-			with a bright future. My project was not well <br>
-			organized, but Jack worked hard to add value
-			and come up with solutions. His technical <br>
-			knowledge was very good and he has an
-			excellent work ethic. I would recommend him
-			without hesitation."<br><br>
-			Bob Williams, Upwork
-
-		</div>
-		
-		<!-- PAGE INFO HERE -->
-		<div class="BodyContainer" style="height:auto;">
-			<!-- <div class="PageHeader" style="padding-bottom:15px">
-				Portfolio
-			</div> -->
-			
-			<!-- Games -->
-			<div class="pageContent">
-				<!--Row 0 -->
-				<div class="container2">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-
-						<img class="cover2" src="data/portfolio/Radar.png" onmouseover="OnHover('#p9')" id="slideshow0">
-						<img class="cover2" src="data/portfolio/Ruin.png" onmouseover="OnHover('#p9')" id="slideshow1" style="display: none">
-						<img class="cover2" src="data/portfolio/seed.png" onmouseover="OnHover('#p9')" id="slideshow2" style="display: none">
-						<div class="imageflip" id="fader" style="display: none">.</div>
-						
-						<!-- Overlay -->
-						<div id="p9" class="overlay2" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="seed.html">Seed - Tree Creation Tool<br><span class="overlaytextsub">Final Major Project</br>C++, DirectX 11</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p9')</script>
-					</div>
-				</div>
-
-				<div style="padding-top:10px"> <!-- Spacer --> </div>				
-
-				<!-- Row 1 -->
-				<div class="container">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/pitfall/cover.png" onmouseover="OnHover('#p8')">
-						
-						<!-- Overlay -->
-						<div id="p8" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="pitfall.html">Pitfall<br><span class="overlaytextsub">C++, DirectX 11</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p8')</script>
-					</div>
-				</div>
-				
-				<div class="container" style="margin-left:10px;">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/ppr/cover.png" onmouseover="OnHover('#p7')">
-						
-						<!-- Overlay -->
-						<div id="p7" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="ppr.html">Puppy Playhouse Rescue<br><span class="overlaytextsub">Unity - Android</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p7')</script>
-					</div>
-				</div>
-				
-				<div style="padding-top:10px"> <!-- Spacer --> </div>
-				
-				<!-- Row 2 -->
-				<div class="container">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/theparty/cover.png" onmouseover="OnHover('#p6')">
-						
-						<!-- Overlay -->
-						<div id="p6" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="theparty.html">The Party<br><span class="overlaytextsub">Unity</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p6')</script>
-					</div>
-				</div>
-				
-				<div class="container" style="margin-left:10px;">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/ps4game/cover.png" onmouseover="OnHover('#p5')">
-						
-						<!-- Overlay -->
-						<div id="p5" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="thelastsamurai.html">The Last Samurai<br><span class="overlaytextsub">C++, PS4</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p5')</script>
-					</div>
-				</div>
-				
-				<div style="padding-top:10px"> <!-- Spacer --> </div>
-			
-				<!-- Row 4 -->
-				<div class="container">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/amazingarchery/cover.png" onmouseover="OnHover('#p2')">
-						
-						<!-- Overlay -->
-						<div id="p2" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="amazingarchery.html">Amazing Archery<br><span class="overlaytextsub">Unity - Android</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p2')</script>
-					</div>
-				</div>
-				
-				<div class="container" style="margin-left:10px;">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/gravity/cover.png" onmouseover="OnHover('#p1')">
-						
-						<!-- Overlay -->
-						<div id="p1" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="gravity.html">Gravity<br><span class="overlaytextsub">Unity -  Android/PC</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p1')</script>
-					</div>
-				</div>
-				
-				<!-- Row 3 -->
-				<div class="container">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/muggermansion/cover.png" onmouseover="OnHover('#p4')">
-						
-						<!-- Overlay -->
-						<div id="p4" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="muggermansion.html">Mugger Mansion<br><span class="overlaytextsub">C++, SDL2</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p4')</script>
-					</div>
-				</div>
-				
-				<div class="container" style="margin-left:10px;">
-					<!-- Parent contains the overlay and cover image -->
-					<div class="parent">
-						<img class="cover" src="data/portfolio/ancientcrypt/cover.png" onmouseover="OnHover('#p3')">
-						
-						<!-- Overlay -->
-						<div id="p3" class="overlay" onmouseleave="OnLeave(this)">
-							<a class="overlaytext unselectable" href="ancientcrypt.html">Ancient Crypt<br><span class="overlaytextsub">C++</span></a>
-						</div>
-						
-						<!--Must call to hide the overlay on load -->
-						<script>Hide('#p3')</script>
-					</div>
-				</div>
-				
-				<div style="padding-top:10px"> <!-- Spacer --> </div>
-			
+		<div class="CopyrightFooter">
+			<div class="CopyRightFooterText">
+				Copyright &copy
+				<script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+				// Jack Isaacs
 			</div>
-			
-			<!-- Adobe Illustrator -->
-			
-			
-			<!-- Software -->
-			
-			
-			
 		</div>
-		
-		<div class="footer">
-			Copyright &#169 Jack Isaacs 2018 <br>
-			jackisaacs.github.io
-		</div>
-	</body>
+	</div>
+
+
+
+	<script>Start();</script>
+</body>
+
 </html>

@@ -1,254 +1,516 @@
-@font-face {
-	font-family: Ikaros;
-	src: url("data/Ikaros.otf");
-}
-
-
-body {
-	background-image : url("data/background.png");
-	background-repeat : repeat;
-	
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px
-}
-
-.Header {
-	width: 100%;
-	height: 260px;
-
-	background-color:rgba(0, 0, 0, 0.05);
-	color : #545950;
-	font-family : "Ikaros";
-	font-size: 110px;
-	text-align: center;
-	padding-top: 30px;
-}
-
-.SubHeader {
-	font-size: 20px;
-}
-
-a 
+body
 {
-	text-decoration: none;
-	color : #545950;
-}
+	font-family: 'Open Sans', sans-serif;
+	color: #DCD6F7;
+	background-color: #4E4C67;
 
-.NavBar
-{
-	padding-top:50px;
-	font-family : "Ikaros";
-	font-size: 20px;
-	color : #545950;
-}
-
-.NavBarItem
-{
-	text-decoration: none;
-	padding-left: 20px;
-	padding-right: 20px;
-	color : #545950;
-}
-
-.bodyContainer
-{
-	padding-top : 25px;
-	padding-bottom : 25px;
-	padding-left : 25px;
-	padding-right : 25px;
-	font-family : "Ikaros";
-	color: #606060;
-	width: 850px;
-	margin: 0 auto;
-}
-
-.PageHeader
-{
-	text-align: center;
-	font-size: 40px;
-	text-decoration: bold;
-	color : #545950;
-}
-
-.PageSubHeader
-{
-	text-align: center;
-	font-size: 30px;
-	padding-top:20px;
-	color : #545950;
-}
-
-.PageContent
-{
-	background-color : rgba(202, 235, 242, 0.5);
-	height:auto;
-	text-align: left;
-	font-size: 20px;
-	padding-left:20px;
-	padding-right:20px;
-	padding-top:20px;
-	padding-bottom:20px;
-	color : #545950;
-	border-radius: 30px;
-}
-
-.container
-{
-	width:395px;
-    height:395px;
-	
-	display:inline-block;
-}
-
-
-.container2
-{
-	width:100%;
-    /* height:395px; */
-	
-	display:inline-block;
-}
-
-.parent
-{
-	position:relative;
-	top:0;
-	left:0;
-}
-
-
-.cover
-{
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 395px;
-	height: 395px;
-	border-radius: 30px;
-}
-
-.cover2
-{
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	/* height: 395px; */
-	border-radius: 30px;
-}
-
-.overlay
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:395px;
-	height:395px;
-	background-color:rgba(124, 174, 255, 0.7);
-	
-	text-align:center;
-	display:table;
-	border-radius: 30px;
-	z-index:1;
-}
-
-.overlay2
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	height:456px;
-	background-color:rgba(124, 174, 255, 0.7);
-	
-	text-align:center;
-	display:table;
-	border-radius: 30px;
-	z-index:1;
-}
-
-.imageflip
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	height:456px;
-	background-color:white;
-	color:white;
-	text-align:center;
-	display:table;
-	border-radius: 30px;
-	z-index:1;
-}
-
-.overlayText
-{
-	display: table-cell;
-	vertical-align: middle;
-	z-index:0;
-	color:white;
-	font-size : 50px;
-}
-
-.overlayTextSub
-{
-	font-size : 25px;
-	font-style:italic;
-}
-
-.unselectable
-{
-	-webkit-user-select: none; /* Chrome/Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+ */
-
-	/* Rules below not implemented in browsers yet */
-	-o-user-select: none;
-	user-select: none;
-}
-
-.footer
-{
-	font-family : "Ikaros";
-	text-align: center;
-	height: 30px;
-	margin: 0 auto;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 1rem;
-}
-
-.downloadButton
-{
-	position:absolute;
-	right:10%;
-	top:290px;
-	width:150px;
-	height:76px;
-	border-radius: 15px;
-}
-
-.image
-{
-	width: 200px;
-	height: 150px;
-	position: relative;
-	display: inline-block;
+	padding: 0;
 	margin: 0;
 }
 
-.testimonial
+a
 {
-	right:50%;
-	left:50%;
-	text-align: center;
-	font-style: italic;
-	font-family: 'Montserrat', sans-serif;
-	font-size:15px;
+	text-decoration: none;
+}
+
+.NavigationLink
+{
+	color:inherit;
+	text-decoration: none;
+	border-bottom: 1px solid #DCD6F7;
+	padding-bottom: 3px;
+}
+
+.NavigationLink:hover
+{
+	color:#A6B1E1;
+	border-bottom: 1px solid #A6B1E1;
+	padding-bottom: 3px;
 }
 
 
+.anchor{
+  display: block;
+  height: 30px; /*same height as header*/
+  margin-top: -30px; /*same height as header*/
+  visibility: hidden;
+}
+
+h1
+{
+	text-align: center;
+	width:100%;
+	color: #A6B1E1;
+	height: 75px;
+	line-height: 75px;
+}
+
+h2
+{
+	margin-top: 0px;
+	text-align: center;
+	width:100%;
+	color: #A6B1E1;
+	height: 75px;
+	line-height: 75px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+	h1
+	{
+		text-align: center;
+		width:100%;
+		color: #A6B1E1;
+		height: 75px;
+		font-size: 25px;
+		line-height: 75px;
+	}
+}
+
+.HeaderBar
+{
+	position: fixed;
+	z-index: 1;
+	height: 500px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	color: #DCD6F7;
+	background-color: #985F6F;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.HeaderBar
+	{
+		position: fixed;
+		z-index: 1;
+		height: 0px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		color: #DCD6F7;
+		background-color: #985F6F;
+	}
+}
+
+.HeaderJIName
+{
+	font-family: 'Roboto Slab', serif;
+	opacity: 1.0f;
+	text-align: center;
+	font-size: 100px;
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px)
+{
+	.HeaderJIName
+	{
+		font-family: 'Roboto Slab', serif;
+		opacity: 1.0f;
+		text-align: center;
+		font-size: 50px;
+		position: relative;
+		float: left;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.HeaderNavigation
+{
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	padding-bottom: 15px;
+	padding-right: 5%;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.HeaderNavigation
+	{
+		right: 0;
+		width: 100%;
+		bottom: 0;
+		position: absolute;
+		padding-bottom: 0;
+		padding-right: 0;
+	}
+}
+
+.HeaderNavigationBlock
+{
+	height:50px;
+	padding-left: 50px;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.HeaderNavigationBlock
+	{
+		width: calc(100% / 3.1);
+		height:40px;
+		padding-left: 0;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+.Content
+{
+	text-align: center;
+}
+
+.SMGLogoIMG
+{
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 25px;
+}
+
+.ContactLogo
+{
+	width: 50px;
+	height: 50px;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.SMGLogoIMG
+	{
+		width:70%;
+	}
+}
+
+.InputField
+{
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.InputField
+	{
+		width:50%;
+	}
+}
+
+textarea
+{
+	margin-top: 10px;
+	resize:none;
+}
+
+@media only screen and (max-width: 768px)
+{
+	textarea
+	{
+		width:90%;
+	}
+}
+
+.Avatar
+{
+	width: 300px;
+	height:300px;
+	
+	border-radius: 50%;
+	border: 10px solid #985F6F;
+}
+
+@media only screen and (max-width: 768px)
+{
+.Avatar
+{
+	width: 200px;
+	height: 200px;
+}
+}
+
+.CopyRightFooter
+{
+	width:100%;
+	height:50px;
+	background-color: #985F6F;
+}
+
+.CopyRightFooterText
+{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+p
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	width: 700px;
+}
+
+@media only screen and (max-width: 768px)
+{
+	p
+	{
+		width: 100%;
+	}
+}
+
+table
+{
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+	width: 700px;
+	border-collapse: collapse;
+}
+
+@media only screen and (max-width: 768px)
+{
+	table
+	{
+		margin-left:auto;
+		margin-right:auto;
+		width: 220px;
+	}
+}
+
+.tdRight
+{
+	vertical-align: text-top;
+	padding-top: 20px;
+	width: 50%; 
+	text-align: right; 
+	padding-right: 20px
+}
+
+@media only screen and (max-width: 768px)
+{
+	.tdRight
+	{
+		padding-top: 20px;
+		display: inline-block;
+		width: 100%; 
+		text-align: center; 
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
+
+.tdLeft
+{
+	vertical-align: text-top;
+	padding-top: 20px;
+	width: 50%; 
+	text-align: left; 
+	padding-left: 20px
+}
+
+@media only screen and (max-width: 768px)
+{
+	.tdLeft
+	{
+		padding-top: 20px;
+		display: inline-block;
+		width: 100%; 
+		text-align: center; 
+		padding-right: 0px;
+		padding-left: 0px;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	tr
+	{
+		border-bottom: 1px solid #A6B1E1;
+	}
+}
+
+.Overlay
+{
+    background-color: #985F6F; 
+	z-index: 2;
+	position: fixed;
+	width:100%;
+	height:100%;
+	opacity: 0;
+	left: 0;
+    top: 0;
+	overflow:hidden;
+	visibility:hidden;
+
+	transition: opacity 0.5s, visibility 0.5s;
+}
+
+.OverlayContent
+{
+	position: relative;
+	left:50%;
+	right:50%;
+	transform: translate(-50%, 0);
+	padding-top: 15%;
+	width:700px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px)
+{
+.OverlayContent
+{
+	width:95%;
+}
+}
+
+.OverlayH1
+{
+	text-decoration: bold;
+	font-size: 140%;
+	padding-bottom: 20px;
+}
+
+
+.OverlayVideo
+{
+	left:50%;
+	right:50%;
+} 
+
+@media only screen and (max-width: 768px)
+{
+.OverlayVideo
+{
+	width:95%;
+	height:200px;
+}
+}
+
+.OverlayCloseButton
+{
+	position: absolute;
+    top: 0px;
+	right: 0px;
+	width:50px;
+	height:50px;
+	padding-top: 10px;
+	padding-right: 10px;
+	cursor: auto;
+}
+
+.OverlayCloseButton:hover
+{
+	cursor: pointer;
+}
+
+
+/********* Simple or original overlay *******/
+/* Main container */
+.overlay-image {
+	position: relative;
+	width: 500px;
+	margin: auto;
+	margin-bottom: 5px;
+	transform: translate(8px, 0px);
+}
+
+/* Original image */
+.overlay-image .image {
+	display: block;
+	width: 500px;
+	height: auto;
+	border-radius: 5px;
+}
+
+/* Original text overlay */
+.overlay-image .text {
+	font-family: 'Roboto Slab', serif;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	opacity: 1;
+}
+
+/********* Overlay on hover *******/
+/* New overlay on hover */
+.overlay-image .hover {
+	background-color: #985F6FBB;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 500px;
+	opacity: 0;
+	transition: .5s ease;
+	border-radius: 5px;
+}
+/* New overlay appearance on hover */
+.overlay-image:hover .hover {
+	opacity: 1.0;
+}
+
+@media only screen and (max-width: 768px)
+{
+.overlay-image 
+{
+	position: relative;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+/* Original image */
+.overlay-image .image 
+{
+	display: block;
+	width: 95%;
+	height: auto;
+	border-radius: 5px;
+}
+
+/* Original text overlay */
+.overlay-image .text 
+{
+	font-family: 'Roboto Slab', serif;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	opacity: 1;
+}
+
+/********* Overlay on hover *******/
+/* New overlay on hover */
+.overlay-image .hover 
+{
+	background-color: #985F6FBB;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 95%;
+	opacity: 0;
+	transition: .5s ease;
+	border-radius: 5px;
+}
+}
