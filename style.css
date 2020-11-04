@@ -1,8 +1,18 @@
+:root {
+	--C0:#EEEEEE;
+	--CA:#3D5A80;
+	--CB:#98C1D9;
+	--CC:#E0FBFC;
+	--CD:#EE6C4D;
+	--CE:#293241;
+}
+
+
 body
 {
 	font-family: 'Open Sans', sans-serif;
-	color: #DCD6F7;
-	background-color: #4E4C67;
+	color:var(--C0);
+	background-color: var(--CA);
 
 	padding: 0;
 	margin: 0;
@@ -15,16 +25,16 @@ a
 
 .NavigationLink
 {
-	color:inherit;
+	color: var(--CE);
 	text-decoration: none;
-	border-bottom: 1px solid #DCD6F7;
+	border-bottom: 1px solid var(--CE);
 	padding-bottom: 3px;
 }
 
 .NavigationLink:hover
 {
-	color:#A6B1E1;
-	border-bottom: 1px solid #A6B1E1;
+	color:var(--CD);
+	border-bottom: 1px solid var(--CD);
 	padding-bottom: 3px;
 }
 
@@ -40,7 +50,7 @@ h1
 {
 	text-align: center;
 	width:100%;
-	color: #A6B1E1;
+	color: var(--CD);
 	height: 75px;
 	line-height: 75px;
 }
@@ -50,7 +60,7 @@ h2
 	margin-top: 0px;
 	text-align: center;
 	width:100%;
-	color: #A6B1E1;
+	color: var(--CD);
 	height: 75px;
 	line-height: 75px;
 	margin-top: 0;
@@ -64,7 +74,7 @@ h2
 	{
 		text-align: center;
 		width:100%;
-		color: #A6B1E1;
+		color: var(--CD);
 		height: 75px;
 		font-size: 25px;
 		line-height: 75px;
@@ -79,8 +89,8 @@ h2
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	color: #DCD6F7;
-	background-color: #985F6F;
+	color: var(--CE);
+	background-color: var(--CB);
 }
 
 @media only screen and (max-width: 768px)
@@ -93,8 +103,8 @@ h2
 		width: 100%;
 		padding: 0;
 		margin: 0;
-		color: #DCD6F7;
-		background-color: #985F6F;
+		color: var(--CE);
+		background-color: var(--CB);
 	}
 }
 
@@ -178,12 +188,16 @@ h2
     margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 25px;
+	filter: invert(95%) sepia(20%) saturate(317%) hue-rotate(110deg) brightness(106%) contrast(98%);
+	-webkit-filter: invert(95%) sepia(20%) saturate(317%) hue-rotate(110deg) brightness(106%) contrast(98%);
 }
 
 .ContactLogo
 {
 	width: 50px;
 	height: 50px;
+	filter: invert(95%) sepia(20%) saturate(317%) hue-rotate(110deg) brightness(106%) contrast(98%);
+	-webkit-filter: invert(95%) sepia(20%) saturate(317%) hue-rotate(110deg) brightness(106%) contrast(98%);
 }
 
 @media only screen and (max-width: 768px)
@@ -191,6 +205,8 @@ h2
 	.SMGLogoIMG
 	{
 		width:70%;
+		filter: invert(95%) sepia(20%) saturate(317%) hue-rotate(110deg) brightness(106%) contrast(98%);
+		-webkit-filter: invert(95%) sepia(20%) saturate(317%) hue-rotate(110deg) brightness(106%) contrast(98%);
 	}
 }
 
@@ -227,7 +243,7 @@ textarea
 	height:300px;
 	
 	border-radius: 50%;
-	border: 10px solid #985F6F;
+	border: 10px solid var(--CD);
 }
 
 @media only screen and (max-width: 768px)
@@ -243,7 +259,7 @@ textarea
 {
 	width:100%;
 	height:50px;
-	background-color: #985F6F;
+	background-color: var(--CB);
 }
 
 .CopyRightFooterText
@@ -251,6 +267,7 @@ textarea
 	text-align: center;
 	vertical-align: middle;
 	line-height: 50px;
+	color: var(--CE);
 }
 
 p
@@ -343,7 +360,8 @@ table
 
 .Overlay
 {
-    background-color: #985F6F; 
+	background-color: var(--CB); 
+	color: var(--CE);
 	z-index: 2;
 	position: fixed;
 	width:100%;
@@ -437,7 +455,7 @@ table
 /* Original text overlay */
 .overlay-image .text {
 	font-family: 'Roboto Slab', serif;
-	color: #fff;
+	color:var(--CE);
 	font-size: 30px;
 	text-align: center;
 	position: absolute;
@@ -451,7 +469,7 @@ table
 /********* Overlay on hover *******/
 /* New overlay on hover */
 .overlay-image .hover {
-	background-color: #985F6FBB;
+	background-color: var(--CB);
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -488,7 +506,7 @@ table
 .overlay-image .text 
 {
 	font-family: 'Roboto Slab', serif;
-	color: #fff;
+	color:var(--CE);
 	font-size: 30px;
 	text-align: center;
 	position: absolute;
@@ -503,7 +521,7 @@ table
 /* New overlay on hover */
 .overlay-image .hover 
 {
-	background-color: #985F6FBB;
+	background-color:var(--CB);
 	position: absolute;
 	top: 0;
 	height: 100%;
